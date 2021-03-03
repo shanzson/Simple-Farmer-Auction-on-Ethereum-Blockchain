@@ -9,6 +9,6 @@ Smart Contracts can help the Farmers in the following way
 
 # These are the Truffle Tests
 
-![](/Screenshots/test.JPG)
+![](/Screenshots/test1.JPG)
 
 
