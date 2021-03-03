@@ -30,7 +30,7 @@ contract Auction {
     }
 
 
-    function bid(uint k) public returns (uint _highestBid) {
+    function bid(uint k) public {
         require(
             block.timestamp <= auctionEndTime,
             "Auction already ended."
@@ -43,7 +43,7 @@ contract Auction {
         highest_bidder = msg.sender;
         highest_bid = k;
         emit HighestBidIncreased(msg.sender, highest_bid);
-        return highest_bid;
+        //return highest_bid;
     }
 
     function getFarmer() public view returns(address){
